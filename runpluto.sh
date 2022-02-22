@@ -18,4 +18,7 @@ Pluto.run(
     require_secret_for_access=false
 )"
 echo ${command}
-julia --project="/home/jovyan" --optimize=0 -e "${command}"
+julia --project="" --optimize=0 -e "${command}"
+
+# I changed this:
+#julia --project="/home/jovyan" --optimize=0 -e "${command}"
